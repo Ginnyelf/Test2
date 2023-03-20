@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 public class RestServiceTest {
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/data.csv")
-     public void shouldCalculateRest(int expected , int threshold , int expenses , int income) {
+    public void shouldCalculateRest(int expected, int threshold, int expenses, int income) {
         RestService service = new RestService();
         //int threshold = 20000;
         //int expenses = 3000;
